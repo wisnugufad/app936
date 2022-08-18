@@ -39,9 +39,9 @@
       </b-col>
       <b-col sm="12">
         <b-input-group class="mt-3">
-          <b-form-input v-model="text" />
+          <b-form-input id="msgRes" v-model="text" />
           <b-input-group-append>
-            <b-button squared variant="primary">
+            <b-button squared variant="primary" @click="copyToClipboard()">
               <b-icon icon="back" /> Copy</b-button
             >
           </b-input-group-append>
@@ -91,19 +91,7 @@ export default {
     },
     onChangeInclude() {
       var temp = "";
-      if (this.choice.includes("start")) {
-        temp =
-          temp +
-          "msqistart " +
-          this.selectedBroker +
-          " -e " +
-          this.selectedModule +
-          " -w 120";
-      }
       if (this.choice.includes("stop")) {
-        if (this.choice.includes("start")) {
-            temp = temp + ' && '
-        }
         temp =
           temp +
           "msqistop " +
@@ -112,9 +100,21 @@ export default {
           this.selectedModule +
           " -w 120";
       }
+      if (this.choice.includes("start")) {
+        if (this.choice.includes("stop")) {
+          temp = temp + " && ";
+        }
+        temp =
+          temp +
+          "msqistart " +
+          this.selectedBroker +
+          " -e " +
+          this.selectedModule +
+          " -w 120";
+      }
       if (this.choice.includes("tail")) {
         if (this.choice.includes("stop") || this.choice.includes("start")) {
-            temp = temp + ' && '
+          temp = temp + " && ";
         }
         // tail -f -n 1000 /var/mdw/wmb-SMSBROKER-SMS.log
         temp =
@@ -125,8 +125,28 @@ export default {
           this.selectedModule +
           ".log";
       }
-      this.text = temp
-      console.log(this.text)
+      this.text = temp;
+    },
+    copyToClipboard() {
+      /* Get the text field */
+      var copyText = document.getElementById("msgRes");
+
+      /* Select the text field */
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+      /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyText.value);
+      /* Alert the copied text */
+      alert("Message copied");
+      //   .then(function () {
+      //     /* Alert the copied text */
+      //     this.$bvToast.toast("Message copied", {
+      //       title: `Copied`,
+      //       variant: "success",
+      //       solid: true,
+      //     })
+      //   }, 5000);
     },
   },
 };
