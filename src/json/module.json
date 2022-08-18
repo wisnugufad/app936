@@ -1,0 +1,118 @@
+[
+    {
+        "name": "BDSBROKER",
+        "item": [
+            "BDS",
+            "BDSCORE1",
+            "BDSMDW1",
+            "BDSROUTER"
+        ]
+    },
+    {
+        "name": "BIFBROKER",
+        "item": [
+            "BIF",
+            "BIFCORE1",
+            "BIFCORE2",
+            "BIFLOGDB",
+            "BIFMDW1",
+            "BIFROUTER"
+        ]
+    },
+    {
+        "name": "CMSBROKER",
+        "item": [
+            "CMS",
+            "CMSMDW1"
+        ]
+    },
+    {
+        "name": "DUMBROKER",
+        "item": [
+            "DUMBROKER"
+        ]
+    },
+    {
+        "name": "ISOBROKER",
+        "item": [
+            "CWS",
+            "ISO",
+            "ISOLOGDB",
+            "ISOPAY",
+            "KONVEN1",
+            "SYARIAH"
+        ]
+    },
+    {
+        "name": "ITMBROKER",
+        "item": [
+            "ITMCORE1",
+            "ITMITM1",
+            "ITMLOGDB",
+            "ITMROUTER"
+        ]
+    },
+    {
+        "name": "ITMBROKER",
+        "item": [
+            "ITMCORE1",
+            "ITMITM1",
+            "ITMLOGDB",
+            "ITMROUTER"
+        ]
+    },
+    {
+        "name": "PAYBROKER",
+        "item": [
+            "BILL_PAYMENT",
+            "OMNI_PAYMENT",
+            "OMNI_PAYWS1",
+            "PAYCORE1",
+            "PAYMDW",
+            "PAYREST1",
+            "PAYWS1",
+            "PAY_OMNI_MDW1",
+            "PERTAMINA"
+        ]
+    },
+    {
+        "name": "SMSBROKER",
+        "item": [
+            "SMS",
+            "SMSCORE1",
+            "SMSIBFT",
+            "SMSISO",
+            "SMSLOGDB",
+            "SMSMDW1",
+            "SMSROUTER"
+        ]
+    },
+    {
+        "name": "SVCBROKER",
+        "item": [
+            "DOKPOK",
+            "LOSCRMS",
+            "SVCCORE1",
+            "SVCLOGDB",
+            "WBMBASE1",
+            "WBWS1"
+        ]
+    },
+    {
+        "name": "WEBBROKER",
+        "item": [
+            "WBABCS1",
+            "WBCORE1",
+            "WBISOABCS",
+            "SVCLOGDB",
+            "WBMBASE1",
+            "WBWS1"
+        ]
+    },
+    {
+        "name": "WSBROKER",
+        "item": [
+            "WS"
+        ]
+    }
+]

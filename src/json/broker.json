@@ -1,0 +1,50 @@
+[
+    {
+        "name": "BDSBROKER",
+        "item": "BDSBROKER"
+    },
+    {
+        "name": "BIFBROKER",
+        "item": "BIFBROKER"
+    },
+    {
+        "name": "CMSBROKER",
+        "item": "CMSBROKER"
+    },
+    {
+        "name": "DUMBROKER",
+        "item": "DUMBROKER"
+    },
+    {
+        "name": "ISOBROKER",
+        "item": "ISOBROKER"
+    },
+    {
+        "name": "ITMBROKER",
+        "item": "ITMBROKER"
+    },
+    {
+        "name": "ITMBROKER",
+        "item": "ITMBROKER"
+    },
+    {
+        "name": "PAYBROKER",
+        "item": "PAYBROKER"
+    },
+    {
+        "name": "SMSBROKER",
+        "item": "SMSBROKER"
+    },
+    {
+        "name": "SVCBROKER",
+        "item": "SVCBROKER"
+    },
+    {
+        "name": "WEBBROKER",
+        "item": "WEBBROKER"
+    },
+    {
+        "name": "WSBROKER",
+        "item": "WSBROKER"
+    }
+]
