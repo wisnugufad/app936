@@ -6,7 +6,7 @@
     </nav> -->
     <div>
       <b-navbar toggleable="lg" type="dark" variant="dark">
-        <b-navbar-brand href="#" class="m-2 mb-0 mt-0">NavBar</b-navbar-brand>
+        <b-navbar-brand href="#" class="m-2 mb-0 mt-0">APP 936</b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse" class="m-2 mb-0 mt-0"></b-navbar-toggle>
 
